@@ -1,0 +1,25 @@
+@import '../../styles/base/variables.scss';
+@import '../../styles/mixin/media-screen.scss';
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  &__logo {
+    width: 40%;
+  }
+
+  &__name {
+    margin-top: 1.5em;
+    color: $primaryTextColor;
+    font-weight: 500;
+    font-size: 1rem;
+
+    @include for-phone-only {
+      font-size: 1.2rem;
+    }
+  }
+}

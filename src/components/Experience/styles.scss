@@ -1,0 +1,80 @@
+@import '../../styles/base/variables.scss';
+@import '../../styles/mixin/media-screen.scss';
+
+.experience {
+  display: grid;
+  grid-template-columns: 33% 42% 25%;
+  width: 100%;
+  border-bottom: 1px solid $secondaryTextColor;
+  padding: 1em;
+
+  &:first-child {
+    border-top: 1px solid $secondaryTextColor;
+  }
+
+  &__position-main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  &__position-name {
+    color: $primaryTextColor;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5em;
+
+    @include for-phone-only {
+      margin-bottom: .2em;
+    }
+  }
+
+  &__position-location {
+    color: $secondaryTextColor;
+  }
+
+  &__position-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include for-phone-only {
+      margin-top: 1em;
+      margin-bottom: 1.8em;
+      justify-content: flex-start;
+    }
+  }
+
+  &__date {
+    font-size: 1em;
+  }
+
+  &__date-separator {
+    margin: 0 .6em;
+    font-size: 1em;
+  }
+
+  &__company-website {
+    &--we-develop {
+      & .experience__company-logo {
+        background-color: #272a40;
+        padding-top: 9px;
+        padding-right: 6px;
+      }
+    }
+
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+
+  &__company-logo {
+    width: 190px;
+    height: 60px;
+  }
+
+  @include for-phone-only {
+    grid-template-columns: 100%;
+    padding: 1em 0;
+  }
+}

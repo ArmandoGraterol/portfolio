@@ -1,0 +1,15 @@
+@import '../styles/base/variables.scss';
+@import '../styles/mixin/media-screen.scss';
+
+.page__title {
+  margin-bottom: 1.5em;
+  font-size: 1.8rem;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  color: $primaryTextColor;
+
+  @include for-phone-only {
+    font-size: 1.6rem;
+    margin-top: 1.5em;
+  }
+}

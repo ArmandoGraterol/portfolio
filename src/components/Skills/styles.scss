@@ -1,0 +1,14 @@
+@import '../../styles/mixin/media-screen.scss';
+
+.skills {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  height: 100%;
+  padding-right: 1.2em;
+  
+  @include for-phone-only {
+    grid-template-columns: 50% 50%;
+    padding-right: 0;
+  }
+}
