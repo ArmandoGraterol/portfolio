@@ -12,7 +12,7 @@ const HeaderLink = ({ name, icon, url }) => {
   return (
     <AniLink
       cover
-      bg='#4174E0'
+      bg='#3b8686'
       to={url}
       className={classnames('header-link', {
         'header-link--active': pathname === url

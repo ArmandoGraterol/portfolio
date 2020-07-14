@@ -55,14 +55,6 @@
   }
 
   &__company-website {
-    &--we-develop {
-      & .experience__company-logo {
-        background-color: #272a40;
-        padding-top: 9px;
-        padding-right: 6px;
-      }
-    }
-
     @include for-phone-only {
       text-align: center;
     }
